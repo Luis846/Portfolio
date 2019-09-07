@@ -6,6 +6,10 @@
             box-sizing: border-box;
 }
 
+a{
+     text-decoration: none;
+}
+
 html,
 body{
     background-color: #fff;
@@ -99,7 +103,7 @@ h2:after,
 /*--------------Paragraphs-------*/
 
 .long-lorem{
-    line-height: 145%;
+    line-height: 2;
     width: 75%;
     margin-left: 15%;
 }
@@ -191,7 +195,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-   
+
 }
 
 .hero-text-box{
@@ -240,7 +244,7 @@ nav{
 
 .main-nav li a:hover,
 .main-nav li a:active{
-   color: #ff005e;   
+   color: #ff005e;
 }
 
 
@@ -312,8 +316,8 @@ nav{
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
-    -webkit-box-shadow: 0 2px 2px #efefef;
-            box-shadow: 0 2px 2px #efefef;
+    -webkit-box-shadow: 0 2px 2px #000;
+            box-shadow: 0 2px 2px #000;
 }
 
 .tech-div{
