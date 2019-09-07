@@ -6,9 +6,7 @@
             box-sizing: border-box;
 }
 
-a{
-     text-decoration: none;
-}
+
 
 html,
 body{
@@ -31,7 +29,9 @@ body{
 /*------------------------------------*/
 /* Reuseable */
 
-
+.project-links{
+    text-decoration: none;
+}
 .row{
     max-width: 1140px;
     margin: 0 auto;
