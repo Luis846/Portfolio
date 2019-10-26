@@ -4,12 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <title>Luis Rivera Portfolio</title>
 
@@ -24,202 +25,262 @@
 <meta name="theme-color" content="#ffffff">
 </head>
  <body>
-   <header>
 
-       <nav>
-            <div class="row">
-            <ul class="main-nav js-main-nav">
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#technologies">Technologies</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#contactMe">Contact Me</a></li>
-            </ul>
-            <a class="mobile-nav-icon js-nav-icon"><i class="fas fa-bars"></i></a>
+     <header id="header" class="header header--fixed header--scrolling js-wp-1">
+            <div class="container">
+                <div class="row align-items-center h-100">
+     <nav class="col-9 col-lg-6" id="menu-top">
+         <div class="header__logo">
+             <div class="header__logo-icon"><i class="fas fa-network-wired"></i>
+            </div>
+             <a class="name-top js-scroll-to-start"href="#toptop">Luis R.</a>
          </div>
-       </nav>
+     </nav>
+     
+     <nav class="col-3 col-lg-6 navbar navbar-expand-lg p-0" id="menu">
+         <button id="toggleroutline"class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarMenu">
+             <span class="navbar-toggler-icon"><i class="fas fa-bars togglers"></i></span>
+         </button>   
+        <div class="collapse navbar-collapse" id="navbarMenu">           
+         <ul class="header__menu collapse d-flex navbar-nav ml-auto" id="navbarMenu">
+                <li class="header__menu-item nav-item">
+                    <a class="header__menu-link nav-link js-about" href="#aboutMe">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="header__menu-item nav-item">
+                        <a class="header__menu-link nav-link js-tech" href="#techStack">Tech</a>
+                    </li>
+            
+                <li class="header__menu-item nav-item">
+                    <a class="header__menu-link nav-link js-project" href="#projects-section">Projects</a>
+                </li>
+                <li class="header__menu-item nav-item">
+                        <a class="header__menu-link nav-link js-contact" href="#contactMe">Contact</a>
+                    </li>
+                    
+            </ul>
+        </div>
+        </nav>
+         </div>
+       </div>
+    </header>
+  <main class="main" id="main">
 
-
-       <div class="hero-text-box">
-           <h1>Hello, im <span id="main-name">Luis Rivera</span>.</h1>
+<section class="section-header" id="#toptop">
+       <div class="hero-text-box  mx-auto js-wp-1">
+           <h1>Hello, i'm <span id="main-name">Luis Rivera</span>.</h1>
            <h1>Full-Stack Developer</h1>
-           <a class="btn btn-ghost js-scroll-to-start" href="#">About Me</a>
+           <p class="font-weight-bold">If you're a business seeking a web presence or are looking to hire, contact me <a href="#contactMe">here</a>.</p>
+           <button class="btn mx-auto btn-secondary--gradient js-scroll-to-about" href="#aboutMe">About Me</button>
        </div>
-   </header>
+</section>
 
-   <section class="section-features js-section-features" id="aboutMe">
-       <div class="row">
-            <h2>My Story</h2>
-            <p class="long-lorem">
-                &nbsp;&nbsp;&nbsp;&nbsp;Born in Boston, MA and currently living in Miami, FL. Passion for Web Development specifically
-                Front-End but Full-Stack focused. I'm a passionate and hard working developer with the aptitude for creating elegant solutions. Looking for growth opportunities to try new technologies and grow my technical skill set in a team-based atmosphere.
 
+   <section class="section-about" id="aboutMe">
+  
+           <img  class="work-img  mx-auto d-block js-wp-3" src="caro/thinking.svg" alt="work_img_logo">
+            <h2 class="font-weight-bold js-wp-2 h2-f">About</h2>
+            <p class="long-lorem js-wp-3">
+                &nbsp;&nbsp;&nbsp;&nbsp;Adaptable and results-oriented professional with proven knowledge of application development, web design, and 
+                website architecture, aiming to use my HTML, CSS, Javascript, Python, React JS, REST API’s, JEST and 
+                debugging skills to successfully fill a Software Developer role. 
             </p>
-       </div>
-
+     
    </section>
 
-   <section class="section-technologies" id="technologies">
-        <div class="rows">
-            <h2>Technologies</h2>
-        </div>
-        <div class="row">
-            <div class="col span-1-of-3">
-                <div class=" tech-box js-wp-4">
-                    <div class="tech-div">
-                        <h3 class="h3-tech">Front-End</h3>
-                        <ion-icon class="tech-icon" size="large" name="code"></ion-icon>
-                    </div>
-                    <div>
-                        <ul class="ul-list">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>jquery</li>
-                        </ul>
+   <section class="section-technologies bg-white" id="techStack">
+       <div class="container-section">
+        <img  class="work-img  mx-auto d-block js-wp-4 " src="caro/risks.svg" alt="work_img_logo">
+            <h2 class="font-weight-bold js-wp- h2-f">Technologies</h2>
+      
+            <div class="top-content pt-5 js-wp-6">
+                    <div class="container-fluid">
+                        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                                    <img src="caro/html5.svg" class="img-fluid mx-auto d-block" alt="img1">
+                                    <p class="text-center name-titles">HTML5</p>
+                                </div>
+                                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <img src="caro/css-3.svg" class="img-fluid mx-auto d-block" alt="img2">
+                                    <p class="text-center name-titles">CSS3</p>
+                                </div>
+                                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <img src="caro/javascript.svg" class="img-fluid mx-auto d-block" alt="img3">
+                                    <p class="text-center name-titles">JavaScript</p>
+                                </div>
+                                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <img src="caro/bootstrap.svg" class="img-fluid mx-auto d-block" alt="img4">
+                                    <p class="text-center name-titles">Bootstrap</p>
+                                </div>
+                                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <img src="caro/react.svg" class="img-fluid mx-auto d-block" alt="img5">
+                                    <p class="text-center name-titles">React</p>
+                                </div>
+                                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <img src="caro/python.svg" class="img-fluid mx-auto d-block" alt="img6">
+                                    <p class="text-center name-titles">Python</p>
+                                </div>
+                                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <img src="caro/mysql.svg" class="img-fluid mx-auto d-block" alt="img7">
+                                    <p class="text-center name-titles">MySQL</p>
+                                </div>
+                                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                    <img src="caro/django-seeklogo.com.svg" class="img-fluid mx-auto d-block" alt="img8">
+                                    <p class="text-center name-titles">Django</p>
+                                </div>
+                                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <img src="caro/wordpress.svg" class="img-fluid mx-auto d-block" alt="img8">
+                                        <p class="text-center name-titles">Wordpress</p>
+                                    </div>
+                                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                            <img src="caro/php.svg" class="img-fluid mx-auto d-block" alt="img8">
+                                            <p class="text-center name-titles">PHP</p>
+                                        </div>
+                            </div>
+                            <button class="carousel-control-prev bg-transparent border-0" href="#carousel-example" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon mr-5" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next bg-transparent border-0" href="#carousel-example" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon ml-5" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
+                </div>
+                 </section>
+
+
+<section class="section-projects" id="projects-section" >
+            <img class="work-img  mx-auto d-block js-wp-7" src="caro/report.svg" alt="work_img_logo">
+            <h2 class="font-weight-bold js-wp- h2-f">projects</h2>
+
+    <div class="section-p">
+         <div class="row align-items-center h-100 text-center text-lg-left js-wp-9">
+            <div class="col-lg-6 p-lg-0 box">
+                <img class="" src="resources/img/alphapic.png" alt="project-picture">
             </div>
-            <div class="col span-1-of-3">
-                    <div class=" tech-box js-wp-4">
-                        <div class="tech-div">
-                            <h3 class="h3-tech">frameworks</h3>
-                            <ion-icon class="tech-icon" size="large"name="code-working"></ion-icon>
-                        </div>
-                        <div>
-                            <ul class="ul-list">
-                                <li>React</li>
-                                <li>Flask</li>
-                                <li>SQLAlchemy</li>
-                                <li>BootStrap4</li>
-                                <li>Node.js(learning)</li>
-                            </ul>
-                        </div>
+            <div class="col-lg-5 mx-auto py-3">
+                
+                        <h3 class="h3-projects text-dark text-center font-weight-bold">Alpha-Fitness
+                            <span class="badge badge-primary badge-sm ml-2">2017</span>
+                        </h3>
+                        <p class="showcase__description">Beautiful gym landing page, clean and simplistic.</p>
+                        <a href="https://luis846.github.io/Alpha-Fitness-Landing/" data-light-box class="btn btn-primary mr-lg-3 d-none d-lg-inline-block" target="_blank">Preview</a>
+                        <a href="https://github.com/Luis846/Alpha-Fitness-Landing"  class="btn btn-outline-primary" target="_blank">Code</a>
                     </div>
-                </div>
-                <div class="col span-1-of-3">
-                        <div class=" tech-box js-wp-4">
-                            <div class="tech-div">
-                                <h3 class="h3-tech">ToolKit</h3>
-                                <ion-icon class="tech-icon" size="large" name="code-download"></ion-icon>
-                            </div>
-                            <div>
-                                <ul class="ul-list">
-                                    <li>Docker</li>
-                                    <li>Visual Studio Code</li>
-                                    <li>Sublime Text</li>
-                                    <li>Github</li>
-                                    <li>Google Developer Tools</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-        </div>
-    </section>
-
-
-<section class="section-projects" id="projects-section">
-    <div class="row">
-        <h2 id="projects-h2">projects</h2>
     </div>
-    <div class="row js-wp-3">
-            <div class="col span-1-of-3 box">
-                <img class="img-back" src="resources/img/Webp.net-resizeimage.png" alt="graffiti">
-                <h3 class="h3-projects">Alpha-Fitness</h3>
-                <div class="project-feature">
-                   - Beautiful Gym Landing Page
+
+
+    <div class="section-p">
+            <div class="row align-items-center h-100 text-center text-lg-left js-wp-10">
+            <div class="col-lg-5 mx-auto py-3">
+                    <h3 class="h3-projects text-dark text-center font-weight-bold">Rivera Realty<span class="badge badge-primary badge-sm ml-2">2017</span></h3>
+                    
+                    <p class="showcase__description">Real Estate Web App. Implementing Python, Django and PostgreSQL</p>
+                    <a href="http://159.89.48.67/" data-light-box class="btn btn-primary mr-lg-3 d-none d-lg-inline-block" target="_blank">Preview</a>
+                    <a href="https://github.com/Luis846/RiveraRealty"  class="btn btn-outline-primary" target="_blank">Code</a>
                 </div>
-                <div class="project-feature">
-                  - Created using HTML5, CSS3 and jQuery
-                </div>
-                <div class="project-feature">
-                    <ion-icon name="logo-github" class="icon-small"></ion-icon>
-                    <a class="project-links" href="https://github.com/Luis846/Alpha-Fitness" target="_blank">Code</a> | <a href="https://luis846.github.io/Alpha-Fitness-Landing/" target="_blank">Site</a>
+
+                <div class="col-lg-6 p-lg-0 box">
+                        <img  class="" src="resources/img/lrestate.png" alt="realestate">           
                 </div>
             </div>
-            <div class="col span-1-of-3 box">
-                    <img  class="img-back" src="resources/img/Webp.net-resizeimage (1) copy 2.png" alt="Ravenous">
-                    <h3 class="h3-projects">Ravenous</h3>
-                    <div class="project-feature">
-                       - Restaurant Search
-                    </div>
-                    <div class="project-feature">
-                       - Yelp like clone built with React and JavaScript
-                    </div>
-                    <div class="project-feature">
-                        <ion-icon name="logo-github" class="icon-small"></ion-icon>
-                        <a class="project-links" href="https://github.com/Luis846/Yelp-Clone-Ravenous" target="_blank">Code</a>
-                    </div>
+    </div>
+
+    <div class="section-p">
+            <div class="row align-items-center h-100 text-center text-lg-left js-wp-11">
+                <div class="col-lg-6 p-lg-0 box">
+                        <img class="img-back" src="resources/img/beta.png" alt="SatelliteBetaSoftware">      
                 </div>
-                <div class="col span-1-of-3 box">
-                        <img class="img-back" src="resources/img/raspberrysky.png" alt="Raspberrysky">
-                        <h3 class="h3-projects">Raspberry Sky</h3>
-                        <div class="project-feature">
-                            - Built with Python, Flask, SQLAlchemy and React and Docker
-                            - Implementing the use of the Raspberry Pi
-                        </div>
-                        <div class="project-feature">
-                            - A mission to provide satellites at an affordable cost
-                        </div>
-                        <div class="project-feature">
-                            <ion-icon name="logo-github" class="icon-small"></ion-icon>
-                            <a  class="project-links" href="https://github.com/Luis846/RaspberrySkyFront" target="_blank">FrontEnd Code</a> | <a href="https://github.com/Luis846/Raspberry-Sky-Alpha" target="_blank">Backend Code</a>
-                        </div>
+
+                <div class="col-lg-5 mx-auto py-3">
+                        <h3 class="h3-projects text-dark text-center font-weight-bold">Satellite Beta Software<span class="badge badge-primary badge-sm ml-2">2019</span></h3>
+                        <p class="showcase__description">The first version of the satellite software was created to support decision making in lower earth orbit. Data gathering engine made in Python that collects environmental information like Pressure, Acceleration, Magnetism, etc. The data is exposed via REST API to be relayed back to earth using HTTP Requests.</p>
+                        <p><span class="font-weight-bold">Code is in 3 Repositories</span>: SatelliteSoftware, Rasp and Backend</p>
+                        <a href="https://luis846.github.io/SatelliteBetaSoftware/" data-light-box class="btn btn-primary mr-lg-3 d-none d-lg-inline-block" target="_blank">Preview</a>
+                    <a href="https://github.com/Luis846/SatelliteBetaSoftware"  class="btn btn-outline-primary" target="_blank">Code</a>
                     </div>
+    </div>
         </div>
 </section>
 
 
-<section class="section-contact" id="contactMe">
-    <div class="row">
-        <h2>Lets Work Together</h2>
-    </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-              <span class="fas fa-file-alt fa-3x"></span>
+<section class="section-contact last-section" id="contactMe">
+        <img class="work-img  mx-auto d-block js-wp-12" src="caro/resume.svg" alt="work_img_logo">
+        <h2 class="text-white font-weight-bold js-wp-13 h2-f">Get in touch</h2>
+
+    <div class="container pt-4">
+        <div class="options">
+            <div class="options__inner">
+                <div class="row text-center mb-4">
+                    <div class="col-md-8 mx-auto col-lg-4 js-wp-16 singles-1">
+                            <div class="option__choice">
+                                    <h3 class="option__name">LinkedIn</h3>
+                                    <div>
+                                        <img class="contact-img" src="caro/linkedin.svg" alt="linkedin">
+                                    </div>
+                                    <div>
+                                            <a href="https://www.linkedin.com/in/luis-rivera-68779714b/" target="_blank" class="btn btn-sm mt-3 btn-primary shadow">Select</a>
+                                        </div>
+                                </div>
+                                
+                    </div>
+                    <div class="col-md-8 mx-auto col-lg-4 js-wp-14 singles-1">
+                            <div class="option__choice">
+                                    <h3 class="option__name">Github</h3>
+                                    <div>
+                                        <img class="contact-img" src="caro/github.svg" alt="linkedin">
+                                    </div>
+                                    <div>
+                                            <a href="https://github.com/Luis846" target="_blank" class="btn btn-sm mt-3 btn-primary shadow">My Profile</a>
+                                        </div>
+                                </div>
+                                
+                    </div>
+
+                        <div class="col-md-8 mx-auto col-lg-4 js-wp-15">
+                            <div class="option__choice">
+                                    <h3 class="option__name">Email</h3>
+                                    <div>
+                                        <img class="contact-img" src="caro/email.svg" alt="email">
+                                    </div>
+                                    <div>
+                                            <a href="mailto:luis.rivera846@gmail.com?Subject=Send%20mail" target="_blank" class="btn btn-sm mt-3 btn-primary shadow">Send Email</a>
+                                        </div>
+                                </div>
+                                
+                    </div>
+
+                    
+
+                </div>
             </div>
-            <div class="back"><a href="resources/img/ResumeB.pdf" target="_blank">View my Resume</a></div>
         </div>
     </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-              <span class="fab fa-github-square fa-4x"></span>
-            </div>
-            <div class="back"><a href="https://github.com/Luis846" target="_blank">GitHub</a></div>
-        </div>
-    </div>
-
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-              <span class="fa fa-envelope fa-3x"></span>
-            </div>
-            <div class="back"><a href="mailto:luis.rivera846@gmail.com">Email Me</a></div>
-        </div>
-    </div>
-
+    
 </section>
 
 
-<footer>
-   <div class="row">
-        <p>
-            Copyright &copy; 2018 by Luis Rivera.
+<footer class="">
+   <div class="">
+        <p class="text-dark">
+            Copyright &copy; 2019 by Luis Rivera.
         </p>
     </div>
 </footer>
+</main>
 
 
 
 
 
-
-
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
