@@ -13,6 +13,7 @@
     .header__menu-link {
         padding: 17px 20px;
     }
+
 }
 
 @media (max-width: 667px){
@@ -22,7 +23,11 @@
         margin-bottom: 15px;
     }
     .section-contact{
-        height: 120vh;
+        height: 170vh;
+    }
+
+    .navbar-toggler{
+        margin-left: auto;
     }
 }
 /* Small phones to small tablets: 481 to 767px */
