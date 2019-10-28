@@ -14,6 +14,14 @@
         padding: 17px 20px;
     }
 }
+
+@media (max-width: 667px){
+    .box img {
+        width: 380px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
 /* Small phones to small tablets: 481 to 767px */
 @media only screen and (max-width: 767px){
     body{font-size: 16px;}
@@ -29,45 +37,9 @@
         width: 100%;
         margin: 0 0 4% 0;
     }
-    .main-nav{display: none;}
-    .mobile-nav-icon{
-        display: inline-block;
-    }
-
-    .main-nav{
-        float: left;
-        margin-top: 35px;
-        margin-left: 25px;
-    }
     
 
-    .main-nav li{
-        display: block;
-    }
-
-    .main-nav li a:link,
-    .main-nav li a:visited{
-        display: block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%;
-        color: #3498db;
-        font-weight: bold;
-    }
-
-    .fixed .main-nav{
-        margin-top: 10px;
-    }
     
-    .fixed .main-nav li a:link,
-    .fixed .main-nav li a:visited{
-        padding: 10px 0;
-    }
-    .fixed .mobile-nav-icon .fas{color: #555;}
-    .fixed .mobile-nav-icon {margin-top: 30px;}
-    
-
-
     h1{font-size: 180%;}
     h2{ font-size: 150%;}
 
@@ -76,22 +48,12 @@
         margin-left: 0%;
     }
 
-    .app-screen{width: 40px;}
-    .steps-box:first-child{ text-align: center;}
-
-    .works-step div{
-        height: 40px;
-        width: 40px;
-        padding: 4px;
-        float: left;
-        margin-right: 15px;
-        font-size: 120%;
-    }
     
-        .works-step {margin-bottom: 20px;}
-        .works-step:last-of-type {margin-bottom: 20px;}
-
-
+    
+    
+    .img-back{
+        width: 300px;
+    }
 }
 
 /* small tablet to big tablet from: 768px  to 1023px */
@@ -144,7 +106,16 @@
 
 
 /* small phones: from 0 to 480px */
-@media only screen and (max-width: 480px){
+/* @media only screen and (max-width: 480px){
+    section{padding: 25px 0;}
+    .box img {
+        width: 300px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+} */
+
+@media only screen and (max-width: 736px){
     section{padding: 25px 0;}
 }
 /*small screens from 768px to 918px*/
@@ -189,7 +160,14 @@
         display: block;
         visibility: visible;
     }
+    .box img {
+        width: 300px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
 }
+
 @media (min-width: 576px) {
     .carousel-item {
         margin-right: 0;
